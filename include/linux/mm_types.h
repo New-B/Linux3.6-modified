@@ -353,7 +353,7 @@ struct mm_struct {
 
     /* JRF */
 	pgd_t * pgd_master;
-    pgd_t * pgd_node[MAX_NUMNODES];
+    	pgd_t * pgd_node[MAX_NUMNODES];
 
 	atomic_t mm_users;			/* How many users with user space? */
 	atomic_t mm_count;			/* How many references to "struct mm_struct" (users count as 1) */
